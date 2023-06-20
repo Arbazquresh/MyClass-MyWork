@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>  Java script Functions are Here</h2>
+      first no : <p id="no1"></p>
+      second no : <p id="no2"></p>
+      <p id="demo"></p>
+      <p></p>
+
+  <script>
+    function myfunction(a1,a2){
+    document.getElementById("no1").innerHTML=a1;
+    document.getElementById("no2").innerHTML=a2;
+    return a1*a2;
+    }
+    document.getElementById("demo").innerHTML= myfunction(5,6);
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Conditional statement</title>
+</head>
+<body>
+    <p>This is a condtional statment</p>
+    Enter First Value:<input type="txt1" id="txt1"><br> <br>
+    Enter Second value:<input type="txt2" id="txt2"><br> <br>
+    Sum of numbers:<input type="txt3" id="txt3"><br> <br>
+    <input type="button" id="btn1" value="LargestNumber" onclick="add()">
+    <script>
+        function add(){
+            let a,b;
+            
+            a=parseInt(document.getElementById("txt1").value);
+            b=parseInt(document.getElementById("txt2").value);
+            if(a>b)
+            document.getElementById("txt3").value=a;
+            else if(b>a)
+            document.getElementById("txt3").value=b;
+            else
+            document.getElementById("txt3").value="Equal";
+        }
+    </script>
+</body>
+</html>
